@@ -13,7 +13,7 @@
 
 /* ========== WAYBAR WINDOW ========== */
 window#waybar {
-  background: rgba(20, 20, 25, 0.35);
+  background: rgba(10, 10, 10, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   margin: 6px 0;
@@ -115,9 +115,9 @@ tooltip {
 /* ========== APPS DOCK ========== */
 #custom-files,
 #custom-chrome,
-#custom-vscode,
-#custom-kitty {
-  font-size: 16px;
+#custom-vscode 
+{
+  font-size: 14px;
   padding: 6px 10px;
   margin: 0 6px; /* adjusted for 5 apps only */
   border-radius: 10px;
@@ -148,7 +148,7 @@ tooltip {
 }
 
 #custom-omarchy-text {
-  font-size: 14.5px;
+  font-size: 15px;
   font-style: italic;
   color: #FFEB99; /* Match logo color */
   font-weight: 500;
@@ -156,7 +156,7 @@ tooltip {
 }
 
 #custom-username-text {
-  font-size: 14.5px;
+  font-size: 15px;
   font-style: italic;
   color: #FFEB99; /* Match logo color */
   font-weight: 500;

@@ -19,7 +19,6 @@
     "custom/files",
     "custom/chrome",
     "custom/vscode",
-    "custom/kitty",
     "bluetooth",
     "network",
     "pulseaudio",
@@ -44,7 +43,7 @@
   },
 
   "custom/files": {
-    "format": "",               /* keep the icon, remove color */
+    "format": "",
     "on-click": "nautilus &",
     "tooltip-format": "Files",
     "class": "apps-dock"
@@ -59,12 +58,6 @@
     "format": "󰨞",
     "on-click": "code &",
     "tooltip-format": "VS Code",
-    "class": "apps-dock"
-  },
-  "custom/kitty": {
-    "format": "",
-    "on-click": "kitty &",
-    "tooltip-format": "Kitty",
     "class": "apps-dock"
   },
   "hyprland/workspaces": {
@@ -107,10 +100,10 @@
     "on-click": "$TERMINAL -e btop"
   },
   "clock": {
-  "format": "{:L%A %I:%M %p}",
-  "format-alt": "{:L%d %B W%V %Y}",
-  "tooltip": false,
-  "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
+    "format": "{:%A, %b %d %Y | %I:%M:%S %p}",
+    "tooltip": false,
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
+    "interval": 1
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
