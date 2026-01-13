@@ -70,13 +70,21 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# Override prompt to show ~ instead of full path
-PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%~%{$reset_color%}"
-PROMPT+='$(git_logo_only) '
+# Git prompt styling
+ZSH_THEME_GIT_PROMPT_PREFIX=" (%{$fg[green]%}"   # space + green branch
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
+ZSH_THEME_GIT_PROMPT_DIRTY=""    # remove ✗
+ZSH_THEME_GIT_PROMPT_CLEAN=""    # keep clean as empty
+
+# Main prompt
+PROMPT="%(?:%{$fg_bold[green]%}➜:%{$fg_bold[red]%}➜) %{$fg[cyan]%}%~%{$reset_color%}"
+PROMPT+='$(git_prompt_info) '
+
 
 # User configuration
 
